@@ -1,0 +1,14 @@
+
+1. compile as follows
+	
+	gcc server.c rsa.c -lm -lcrypto -o server
+	./server
+	gcc client.c rsa.c -lm -lcrypto -o client
+	./client 127.0.0.1
+
+2. Enter name of file to download when prompted (input.txt)
+
+3. In Client
+	ReceivedFile.txt is the requested file
+	receivedMD.txt is the sha1 downloaded from server
+	
